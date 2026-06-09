@@ -45,7 +45,6 @@ Fixed-size: 300 characters
 
 **Reasoning:**
 Reviews are generally short. If an answer is longer than a typical chunk, its paragraphs are also structured by different key ideas so this chunking strategy works regardless of edge cases.
----
 
 ## Retrieval Approach
 
@@ -64,7 +63,6 @@ k = 5.
 **Production tradeoff reflection:**
 
 When deployed for real user, take into consideration the conversation context and token limit. It can take longer processing time to search for the right keyword and consolidate them into a proper answers so there must be a template or documentation map.
----
 
 ## Evaluation Plan
 
@@ -79,10 +77,6 @@ When deployed for real user, take into consideration the conversation context an
 ---
 
 ## Anticipated Challenges
-
-<!-- What could go wrong? Name at least two specific risks with reasoning.
-     Consider: noisy or inconsistent documents, missing source attribution, off-topic
-     retrieval, chunks that split key information across boundaries. -->
 
 1. Source inconsistencies that challenge output processing time
 
@@ -112,7 +106,7 @@ flowchart LR
 | Embedding + Vector Store | Claude | Architecture diagram + Retrieval Approach section (all-MiniLM-L6-v2, ChromaDB) | Code that embeds all chunks and stores them in ChromaDB with source metadata | Query ChromaDB directly for a test string and confirm it returns 5 chunks with correct source fields |
 | Retrieval | Claude | Evaluation Plan (5 test questions) + retrieval spec (top-k=5) | A `retrieve(query)` function that returns top-5 chunks with distance scores | Run all 5 test questions and check that returned chunks visibly relate to each question; flag any score above 0.6 |
 | Generation | Claude | Grounding requirement + output format (answer + source list) + Gradio skeleton | A `generate(query)` function and Gradio UI wired end-to-end | Ask a question not in my documents and confirm the system says it doesn't have enough information rather than guessing |
-```
+
 
 **Milestone 3 — Ingestion and chunking:**
 
