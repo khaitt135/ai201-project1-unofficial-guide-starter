@@ -56,10 +56,13 @@ Reviews are generally short. If an answer is longer than a typical chunk, its pa
      support, accuracy on domain-specific text, latency? -->
 
 **Embedding model:**
-all-MiniLM-L6-v2` via `sentence-transformers
+all-MiniLM-L6-v2 via sentence-transformers
+
 **Top-k:**
 k = 5. 
+
 **Production tradeoff reflection:**
+
 When deployed for real user, take into consideration the conversation context and token limit. It can take longer processing time to search for the right keyword and consolidate them into a proper answers so there must be a template or documentation map.
 ---
 
@@ -100,9 +103,6 @@ flowchart LR
 
     E --> F["Generation\n──────────────\nGrounded answer\n+ source citation\n──────────────\ntool: Groq\nllama-3.3-70b"]
 
----
-
-```markdown
 ## AI Tool Plan
 
 | Pipeline Stage | AI Tool | Input I'll Provide | Expected Output | How I'll Verify |
