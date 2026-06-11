@@ -68,11 +68,11 @@ When deployed for real user, take into consideration the conversation context an
 
 | # | Question | Expected Answer |
 |---|----------|-----------------|
-| 1 | How many applications did NEU students typically send before landing a co-op in recent cycles? | Based on r/NEU posts, students report sending 100–300+ applications, with many citing 150–200 as typical before getting an offer |
-| 2 | What specific strategies did students who landed competitive co-ops (FAANG/top startups) say made the difference? | Students cite leetcode grinding, networking through LinkedIn/cold email, applying early in the cycle, and having prior project experience |
-| 3 | What do early-career professionals (2–5 years post-grad) say was the biggest mistake they made in their first co-op or job? | Common answers include not negotiating offers, staying too long at a low-growth company, and not building a visible portfolio |
-| 4 | What technical skills do Blind and HN users most commonly recommend for new CS grads entering the job market in 2024–2025? | System design, DSA for interviews, a strong GitHub, and at least one cloud platform (AWS/GCP) come up most frequently |
-| 5 | Is it better to take a high-paying co-op at an unknown company or a lower-paying one at a well-known company, according to early-career professionals? | Blind discussions lean toward brand name early on for exit opportunities, but several counter that comp + real ownership at startups beats prestige |
+| 1 | show me typical co-op stats | Based on r/NEU posts, students report sending 100-300+ applications with many citing brutal cycles and high ghost rates |
+| 2 | strategy to secure co-op | Students cite LeetCode grinding, networking via NUSource and LinkedIn, applying early, and coffee chats with alumni |
+| 3 | biggest mistake in one's first job | Common regrets include not joining big tech sooner, staying at low-growth companies, and not negotiating offers |
+| 4 | tips on finding jobs | Resume feedback, interview practice, LeetCode for CS roles, career fairs, and referral networks |
+| 5 | is it better high pay unknown company or lower pay brand name | Blind discussions lean toward brand name early for exit opportunities, but a large enough pay gap may justify the unknown company |
 
 ---
 
